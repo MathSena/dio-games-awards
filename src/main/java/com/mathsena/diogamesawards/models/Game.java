@@ -1,9 +1,6 @@
 package com.mathsena.diogamesawards.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +13,7 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    @Column(length = 500)
     private String description;
     private String cover;
     private long votes;
