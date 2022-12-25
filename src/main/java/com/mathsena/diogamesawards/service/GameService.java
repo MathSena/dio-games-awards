@@ -11,5 +11,5 @@ public interface GameService {
     List<Game> findAll();
     void insert(Game game);
     void update(Long id, Game game);
-    void delete(Game game);
+    void delete(Long id);
 }
